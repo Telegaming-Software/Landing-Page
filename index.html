@@ -16,13 +16,14 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
     <!-- Custom styles -->
   </head>
   <body>
     <!-- Start your project here-->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#666785;">
+      <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#141F6A">
         <!-- Container wrapper -->
         <div class="container">
           <!-- Navbar brand -->
@@ -40,22 +41,18 @@
           >
             <i class="fas fa-bars"></i>
           </button>
-
           <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex align-items-center" id="navbarSupportedContent">
             <!-- Left links -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#content">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="#feature">Features</a>
               </li>
 
             </ul>
@@ -68,31 +65,38 @@
       </nav>
       <!-- Navbar -->
     </header>
-    <section>
-
+    <section class="mainPath">
+      <div class="mainText">
+        <h1>Telegaming for <span></span></h1>
+        <a class="btn btn-primary btn-rounded" style="background-color:rgba(21,152,43,0.63)" href="https://frontendtelegaming.web.app/">Get Started</a>
+      </div>
     </section>
       <!-- Icons-->
-      <section class="icons mt-5">
+      <section class="icons mt-5" id="content">
         <div class="container">
           <div class="row text-center d-flex align-items-start bg-light mb-3">
-            <div class="col">
-              <img src="img/Apex.png" class="img-fluid">
+            <h1>Nuestros Juegos Populares</h1>
+            <div class="mt-5 row">
+              <div class="col">
+                <img src="img/Apex.png" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="img/DOta.png" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="img/lol.png" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="img/COD.png" class="img-fluid">
+              </div>
             </div>
-            <div class="col">
-              <img src="img/DOta.png" class="img-fluid">
-            </div>
-            <div class="col">
-              <img src="img/lol.png" class="img-fluid">
-            </div>
-            <div class="col">
-              <img src="img/COD.png" class="img-fluid">
-            </div>
+
           </div>
         </div>
       </section>
 
       <!-- Features Paragraphs-->
-      <section class="mt-5">
+      <section class="mt-5" >
         <div class="container">
           <div class="row text-center d-flex align-items-start bg-light mb-3">
             <div class="col m-3">
@@ -131,8 +135,7 @@
       <!-- Button-->
       <section class="mt-3">
         <div class="text-center">
-          <button type="button" class="btn btn-primary btn-rounded   btn-lg"
-                  style="background-color:rgba(21,152,43,0.63)"> Improve Now </button>
+          <a class="btn btn-primary btn-rounded" style="background-color:rgba(21,152,43,0.63)" href="https://frontendtelegaming.web.app/">Improve Now</a>
         </div>
       </section>
 
@@ -140,11 +143,11 @@
 
     <main>
       <!-- Features-->
-      <div class="container-fluid">
+      <div class="container-fluid" id="feature">
         <section id="about" class="mt-5">
 
-          <div class="row justify-content-center align-items-center mt-5" style="background-color: #666785">
-            <div class="col-md-4 text-white">
+          <div class="row justify-content-center align-items-center mt-5" style="background-color: #f4f0f8">
+            <div class="col-md-4" style="color: #141F6A">
               <h2>Coaching con Help-I</h2>
               <p>
                 En los últimos años los videojuegos online han tenido una gran crecida,
@@ -163,7 +166,7 @@
             <div class="col-md-4">
               <img src="img/Dota%20landin.png" alt="dotaLanding" class="img-fluid" />
             </div>
-            <div class="col-md-4 ">
+            <div class="col-md-4 " style="color: #141F6A">
               <h2>¿Quieres ser el mejor?</h2>
               <p>
                 ¿Quieres mejorar tu puntería, obtener más víctimas, morir menos, farmear más?
@@ -174,8 +177,8 @@
             </div>
           </div>
 
-          <div class="row justify-content-center align-items-center mt-5" style="background-color: #666785">
-            <div class="col-md-4 text-white">
+          <div class="row justify-content-center align-items-center mt-5" style="background-color: #f4f0f8">
+            <div class="col-md-4" style="color: #141F6A">
               <h2>¿Cómo funciona?</h2>
               <p>
                 Gracias a nuestra comunidad de entrenadores que han sido puestos a prueba
@@ -194,7 +197,7 @@
             <div class="col-md-4">
               <img src="img/Warzone%20landin.png" alt="warzoneLanding" class="img-fluid" />
             </div>
-            <div class="col-md-4 ">
+            <div class="col-md-4 " style="color: #141F6A">
               <h2>¿Por qué Help-I?</h2>
               <p>
                 Porque te garantizamos los mejores coaches, a quienes hemos evaluado
@@ -211,7 +214,7 @@
     </main>
 
     <footer>
-      <footer class="text-white text-center text-lg-left mt-5" style="background-color:#666785;">
+      <footer class="text-white text-center text-lg-left mt-5" style="background-color:#141F6A">
         <!-- Grid container -->
 
         <!-- Grid container -->
@@ -220,7 +223,7 @@
           <section class="mb-4">
             <!-- Facebook -->
             <a
-                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    class="btn btn-link btn-floating btn-lg text-white m-1"
                     href="#!"
                     role="button"
                     data-mdb-ripple-color="dark"
@@ -229,7 +232,7 @@
 
             <!-- Twitter -->
             <a
-                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    class="btn btn-link btn-floating btn-lg text-white m-1"
                     href="#!"
                     role="button"
                     data-mdb-ripple-color="dark"
@@ -238,7 +241,7 @@
 
             <!-- Google -->
             <a
-                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    class="btn btn-link btn-floating btn-lg text-white m-1"
                     href="#!"
                     role="button"
                     data-mdb-ripple-color="dark"
@@ -247,7 +250,7 @@
 
             <!-- Instagram -->
             <a
-                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    class="btn btn-link btn-floating btn-lg text-white m-1"
                     href="#!"
                     role="button"
                     data-mdb-ripple-color="dark"
@@ -256,7 +259,7 @@
 
             <!-- Linkedin -->
             <a
-                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    class="btn btn-link btn-floating btn-lg text-white m-1"
                     href="#!"
                     role="button"
                     data-mdb-ripple-color="dark"
@@ -264,7 +267,7 @@
             ></a>
             <!-- Github -->
             <a
-                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    class="btn btn-link btn-floating btn-lg text-white m-1"
                     href="#!"
                     role="button"
                     data-mdb-ripple-color="dark"

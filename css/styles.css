@@ -1,0 +1,99 @@
+.mainPath{
+    background-image:  url(../img/heroImage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+}
+.mainText{
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+}
+span{
+    background: linear-gradient(90deg, #f4f0f8, #141F6A);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: 100%;
+}
+span:before{
+    content: '';
+    animation: animate 15s infinite ;
+}
+.mainText h1{
+    font-weight: bold;
+    font-size: 100px;
+    color: #000000;
+}
+.btnSign{
+
+    font-size: 20px;
+    text-decoration: none;
+    color: #e01a4f;
+    border: 3px solid;
+    padding: 6px 16px;
+    border-radius: 50px;
+}
+.btnSign:hover{
+    background-color: rgba(254,230,48,1);
+}
+.navbarStyle ul li:before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 20px;
+    border-top: 3px solid #4fc4f7;
+    border-left: 3px solid #4fc4f7;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navbarStyle ul li:after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 20px;
+    border-right: 3px solid #e01a4f;
+    border-bottom: 3px solid #e01a4f;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navbarStyle ul li:hover:before{
+    left: -10px;
+    top: -10px;
+    opacity: 1;
+}
+.navbarStyle ul li:hover:after{
+    right: -10px;
+    bottom: -10px;
+    opacity: 1;
+}
+@keyframes animate {
+    0% {
+        content: 'you';
+    }
+    35% {
+        content: 'him';
+    }
+    60% {
+        content: 'her';
+    }
+    75% {
+        content: 'them';
+    }
+    100% {
+        content: 'everybody';
+    }
+
+}
